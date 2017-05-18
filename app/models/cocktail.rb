@@ -6,7 +6,7 @@ class Cocktail < ApplicationRecord
 
   def self.search(search)
     if search
-      joins(:ingredients).where("ingredients.name LIKE ?", "%#{search}%").all
+      joins(:ingredients).where("lower(ingredients.name) LIKE ?", "%#{search.downcase}%").all
     else
       all
     end
