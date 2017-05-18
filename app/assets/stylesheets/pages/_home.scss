@@ -2,3 +2,14 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+body {
+  background-color: $light;
+}
+
+.content {
+  background-color: white;
+  margin: 100px 0;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 2px #B3B3B3;
+}

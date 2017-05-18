@@ -8,7 +8,7 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Search form -->
-    <form action="/ingredients/search" method="get" class="navbar-wagon-search">
+    <form action="/cocktails/search" method="get" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input" placeholder="Search by ingredient", name="search">
       <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
@@ -18,7 +18,7 @@
     <!-- Notification -->
     <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
       <div class="badge-container">
-        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        <i class="fa fa-glass" aria-hidden="true"></i>
         <div class="badge badge-blue"><%= @cocktails.size %></div>
       </div>
     <% end %>

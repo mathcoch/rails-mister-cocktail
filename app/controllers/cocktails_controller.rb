@@ -23,6 +23,11 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def search
+    @cocktails = Cocktail.search(params[:search])
+    render :search
+  end
+
   private
 
   def cocktail_params

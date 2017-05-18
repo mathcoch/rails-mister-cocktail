@@ -9,7 +9,7 @@ class DosesController < ApplicationController
     else
       @cocktails = Cocktail.all
       @cocktail = set_cocktail
-      render 'cocktails/show'
+      render 'cocktails/show', notice: 'erreur'
     end
   end
 
