@@ -9,4 +9,4 @@ serialized_ingredients = open(url).read
 
 ingredients = JSON.parse(serialized_ingredients)
 
-ingredients['drinks'].each { |ingredient| Ingredient.create(name: ingredient.values) }
+ingredients['drinks'].each { |ingredient| Ingredient.create(name: ingredient.values[0]) }
